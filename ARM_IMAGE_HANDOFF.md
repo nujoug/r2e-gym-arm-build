@@ -33,4 +33,8 @@ For Slurm:
 REGISTRY=registry.example.com/namespace/r2e-gym sbatch sbatch_build_push.sh 1
 ```
 
+## Verification Before Push
+
+This R2E-Gym build wrapper does not currently have an integrated gold-patch verification gate before `--push`. The command above builds and pushes successfully built images; use the failed-instance lists below to filter known failures or add a separate validation pass before publishing a final registry.
+
 Failed-instance lists are under `handoff/failed_instances/`.
