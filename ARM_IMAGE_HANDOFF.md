@@ -2,6 +2,15 @@
 
 This repo contains the ARM64 image build changes and helper scripts for R2E-Gym.
 
+## Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -U pip
+python3 -m pip install -e .
+```
+
 ## Build
 
 ```bash
